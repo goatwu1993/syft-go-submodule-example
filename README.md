@@ -1,0 +1,1 @@
+# syft-go-submodule-example
