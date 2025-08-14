@@ -1,0 +1,468 @@
+{
+  "artifacts": [
+    {
+      "id": "51df47eda52fab0b",
+      "name": "github.com/hashicorp/vault/sdk",
+      "version": "v0.9.0",
+      "type": "go-module",
+      "foundBy": "go-module-binary-cataloger",
+      "locations": [
+        {
+          "path": "/main",
+          "accessPath": "/main",
+          "annotations": {
+            "evidence": "primary"
+          }
+        }
+      ],
+      "licenses": [],
+      "language": "go",
+      "cpes": [
+        {
+          "cpe": "cpe:2.3:a:hashicorp:vault\\/sdk:v0.9.0:*:*:*:*:*:*:*",
+          "source": "syft-generated"
+        }
+      ],
+      "purl": "pkg:golang/github.com/hashicorp/vault@v0.9.0#sdk",
+      "metadataType": "go-module-buildinfo-entry",
+      "metadata": {
+        "goCompiledVersion": "go1.25.0",
+        "architecture": "arm64",
+        "h1Digest": "h1:Cbu9ezaZafZTXnen98QKVmufEPquhZ+r1ORZ7csNLFU=",
+        "mainModule": "syft-go-submodule-example"
+      }
+    },
+    {
+      "id": "56e917a7b00a7885",
+      "name": "stdlib",
+      "version": "go1.25.0",
+      "type": "go-module",
+      "foundBy": "go-module-binary-cataloger",
+      "locations": [
+        {
+          "path": "/main",
+          "accessPath": "/main",
+          "annotations": {
+            "evidence": "primary"
+          }
+        }
+      ],
+      "licenses": [
+        {
+          "value": "BSD-3-Clause",
+          "spdxExpression": "BSD-3-Clause",
+          "type": "declared",
+          "urls": [],
+          "locations": []
+        }
+      ],
+      "language": "go",
+      "cpes": [
+        {
+          "cpe": "cpe:2.3:a:golang:go:1.25.0:-:*:*:*:*:*:*",
+          "source": "syft-generated"
+        }
+      ],
+      "purl": "pkg:golang/stdlib@1.25.0",
+      "metadataType": "go-module-buildinfo-entry",
+      "metadata": {
+        "goCompiledVersion": "go1.25.0",
+        "architecture": ""
+      }
+    },
+    {
+      "id": "2cd5b584903544ef",
+      "name": "syft-go-submodule-example",
+      "version": "v0.0.0-20250814043201-597b4983b5ee",
+      "type": "go-module",
+      "foundBy": "go-module-binary-cataloger",
+      "locations": [
+        {
+          "path": "/main",
+          "accessPath": "/main",
+          "annotations": {
+            "evidence": "primary"
+          }
+        }
+      ],
+      "licenses": [],
+      "language": "go",
+      "cpes": [],
+      "purl": "pkg:golang/syft-go-submodule-example@v0.0.0-20250814043201-597b4983b5ee",
+      "metadataType": "go-module-buildinfo-entry",
+      "metadata": {
+        "goBuildSettings": [
+          {
+            "key": "-buildmode",
+            "value": "exe"
+          },
+          {
+            "key": "-compiler",
+            "value": "gc"
+          },
+          {
+            "key": "DefaultGODEBUG",
+            "value": "containermaxprocs=0,decoratemappings=0,tlssha1=1,updatemaxprocs=0,x509sha256skid=0"
+          },
+          {
+            "key": "CGO_ENABLED",
+            "value": "1"
+          },
+          {
+            "key": "CGO_CFLAGS",
+            "value": ""
+          },
+          {
+            "key": "CGO_CPPFLAGS",
+            "value": ""
+          },
+          {
+            "key": "CGO_CXXFLAGS",
+            "value": ""
+          },
+          {
+            "key": "CGO_LDFLAGS",
+            "value": ""
+          },
+          {
+            "key": "GOARCH",
+            "value": "arm64"
+          },
+          {
+            "key": "GOOS",
+            "value": "darwin"
+          },
+          {
+            "key": "GOARM64",
+            "value": "v8.0"
+          },
+          {
+            "key": "vcs",
+            "value": "git"
+          },
+          {
+            "key": "vcs.revision",
+            "value": "597b4983b5eec5785b6085476122dd0875f019e6"
+          },
+          {
+            "key": "vcs.time",
+            "value": "2025-08-14T04:32:01Z"
+          },
+          {
+            "key": "vcs.modified",
+            "value": "true"
+          }
+        ],
+        "goCompiledVersion": "go1.25.0",
+        "architecture": "arm64",
+        "mainModule": "syft-go-submodule-example"
+      }
+    }
+  ],
+  "artifactRelationships": [
+    {
+      "parent": "2cd5b584903544ef",
+      "child": "5690a4e1bb02a417",
+      "type": "evident-by",
+      "metadata": {
+        "kind": "primary"
+      }
+    },
+    {
+      "parent": "51df47eda52fab0b",
+      "child": "2cd5b584903544ef",
+      "type": "dependency-of"
+    },
+    {
+      "parent": "51df47eda52fab0b",
+      "child": "5690a4e1bb02a417",
+      "type": "evident-by",
+      "metadata": {
+        "kind": "primary"
+      }
+    },
+    {
+      "parent": "56e917a7b00a7885",
+      "child": "2cd5b584903544ef",
+      "type": "dependency-of"
+    },
+    {
+      "parent": "56e917a7b00a7885",
+      "child": "5690a4e1bb02a417",
+      "type": "evident-by",
+      "metadata": {
+        "kind": "primary"
+      }
+    },
+    {
+      "parent": "fae1170bd9d5c948a6a60d9f365e1514f498d0dc68d45d888686d76ea8108c5c",
+      "child": "2cd5b584903544ef",
+      "type": "contains"
+    },
+    {
+      "parent": "fae1170bd9d5c948a6a60d9f365e1514f498d0dc68d45d888686d76ea8108c5c",
+      "child": "51df47eda52fab0b",
+      "type": "contains"
+    },
+    {
+      "parent": "fae1170bd9d5c948a6a60d9f365e1514f498d0dc68d45d888686d76ea8108c5c",
+      "child": "56e917a7b00a7885",
+      "type": "contains"
+    }
+  ],
+  "files": [
+    {
+      "id": "5690a4e1bb02a417",
+      "location": {
+        "path": "/main"
+      },
+      "metadata": {
+        "mode": 755,
+        "type": "RegularFile",
+        "userID": 501,
+        "groupID": 20,
+        "mimeType": "application/x-mach-binary",
+        "size": 2421586
+      },
+      "digests": [
+        {
+          "algorithm": "sha1",
+          "value": "f5b268bf4d6adcd3624f5d02f0658f9dc1667de7"
+        },
+        {
+          "algorithm": "sha256",
+          "value": "fe314fba8172de5968a7688cdb410d127d03c5063978c713cf7e4f85cc63d14c"
+        }
+      ],
+      "executable": {
+        "format": "macho",
+        "hasExports": false,
+        "hasEntrypoint": true,
+        "importedLibraries": [
+          "/usr/lib/libSystem.B.dylib",
+          "/usr/lib/libresolv.9.dylib"
+        ]
+      }
+    }
+  ],
+  "source": {
+    "id": "fae1170bd9d5c948a6a60d9f365e1514f498d0dc68d45d888686d76ea8108c5c",
+    "name": "main",
+    "version": "sha256:fe314fba8172de5968a7688cdb410d127d03c5063978c713cf7e4f85cc63d14c",
+    "type": "file",
+    "metadata": {
+      "path": "./tmp/main",
+      "digests": [
+        {
+          "algorithm": "sha256",
+          "value": "fe314fba8172de5968a7688cdb410d127d03c5063978c713cf7e4f85cc63d14c"
+        }
+      ],
+      "mimeType": "application/x-mach-binary"
+    }
+  },
+  "distro": {},
+  "descriptor": {
+    "name": "syft",
+    "version": "1.31.0",
+    "configuration": {
+      "catalogers": {
+        "requested": {
+          "default": [
+            "directory",
+            "file"
+          ]
+        },
+        "used": [
+          "alpm-db-cataloger",
+          "apk-db-cataloger",
+          "binary-classifier-cataloger",
+          "cargo-auditable-binary-cataloger",
+          "cocoapods-cataloger",
+          "conan-cataloger",
+          "dart-pubspec-cataloger",
+          "dart-pubspec-lock-cataloger",
+          "deb-archive-cataloger",
+          "dotnet-deps-binary-cataloger",
+          "dotnet-packages-lock-cataloger",
+          "dpkg-db-cataloger",
+          "elf-binary-package-cataloger",
+          "elixir-mix-lock-cataloger",
+          "erlang-otp-application-cataloger",
+          "erlang-rebar-lock-cataloger",
+          "file-content-cataloger",
+          "file-digest-cataloger",
+          "file-executable-cataloger",
+          "file-metadata-cataloger",
+          "github-action-workflow-usage-cataloger",
+          "github-actions-usage-cataloger",
+          "go-module-binary-cataloger",
+          "go-module-file-cataloger",
+          "graalvm-native-image-cataloger",
+          "haskell-cataloger",
+          "homebrew-cataloger",
+          "java-archive-cataloger",
+          "java-gradle-lockfile-cataloger",
+          "java-jvm-cataloger",
+          "java-pom-cataloger",
+          "javascript-lock-cataloger",
+          "linux-kernel-cataloger",
+          "lua-rock-cataloger",
+          "nix-cataloger",
+          "opam-cataloger",
+          "pe-binary-package-cataloger",
+          "php-composer-lock-cataloger",
+          "php-interpreter-cataloger",
+          "php-pear-serialized-cataloger",
+          "portage-cataloger",
+          "python-installed-package-cataloger",
+          "python-package-cataloger",
+          "r-package-cataloger",
+          "rpm-archive-cataloger",
+          "rpm-db-cataloger",
+          "ruby-gemfile-cataloger",
+          "ruby-gemspec-cataloger",
+          "rust-cargo-lock-cataloger",
+          "swift-package-manager-cataloger",
+          "swipl-pack-cataloger",
+          "terraform-lock-cataloger",
+          "wordpress-plugins-cataloger"
+        ]
+      },
+      "data-generation": {
+        "generate-cpes": true
+      },
+      "files": {
+        "content": {
+          "globs": null,
+          "skip-files-above-size": 0
+        },
+        "hashers": [
+          "sha-1",
+          "sha-256"
+        ],
+        "selection": "owned-by-package"
+      },
+      "licenses": {
+        "coverage": 75,
+        "include-content": "none"
+      },
+      "packages": {
+        "binary": [
+          "python-binary",
+          "python-binary-lib",
+          "pypy-binary-lib",
+          "go-binary",
+          "julia-binary",
+          "helm",
+          "redis-binary",
+          "nodejs-binary",
+          "go-binary-hint",
+          "busybox-binary",
+          "util-linux-binary",
+          "haproxy-binary",
+          "perl-binary",
+          "php-composer-binary",
+          "httpd-binary",
+          "memcached-binary",
+          "traefik-binary",
+          "arangodb-binary",
+          "postgresql-binary",
+          "mysql-binary",
+          "mysql-binary",
+          "mysql-binary",
+          "xtrabackup-binary",
+          "mariadb-binary",
+          "rust-standard-library-linux",
+          "rust-standard-library-macos",
+          "ruby-binary",
+          "erlang-binary",
+          "erlang-alpine-binary",
+          "erlang-library",
+          "swipl-binary",
+          "dart-binary",
+          "haskell-ghc-binary",
+          "haskell-cabal-binary",
+          "haskell-stack-binary",
+          "consul-binary",
+          "hashicorp-vault-binary",
+          "nginx-binary",
+          "bash-binary",
+          "openssl-binary",
+          "gcc-binary",
+          "fluent-bit-binary",
+          "wordpress-cli-binary",
+          "curl-binary",
+          "lighttpd-binary",
+          "proftpd-binary",
+          "zstd-binary",
+          "xz-binary",
+          "gzip-binary",
+          "sqlcipher-binary",
+          "jq-binary",
+          "chrome-binary",
+          "java-binary",
+          "java-jdb-binary"
+        ],
+        "dotnet": {
+          "dep-packages-must-claim-dll": true,
+          "dep-packages-must-have-dll": false,
+          "propagate-dll-claims-to-parents": true,
+          "relax-dll-claims-when-bundling-detected": true
+        },
+        "golang": {
+          "local-mod-cache-dir": "/Users/peter_wu/go/pkg/mod",
+          "local-vendor-dir": "",
+          "main-module-version": {
+            "from-build-settings": true,
+            "from-contents": false,
+            "from-ld-flags": true
+          },
+          "proxies": [
+            "https://proxy.golang.org",
+            "direct"
+          ],
+          "search-local-mod-cache-licenses": false,
+          "search-local-vendor-licenses": false,
+          "search-remote-licenses": false
+        },
+        "java-archive": {
+          "include-indexed-archives": true,
+          "include-unindexed-archives": false,
+          "maven-base-url": "https://repo1.maven.org/maven2",
+          "maven-localrepository-dir": "/Users/peter_wu/.m2/repository",
+          "max-parent-recursive-depth": 0,
+          "resolve-transitive-dependencies": false,
+          "use-maven-localrepository": false,
+          "use-network": false
+        },
+        "javascript": {
+          "include-dev-dependencies": false,
+          "npm-base-url": "https://registry.npmjs.org",
+          "search-remote-licenses": false
+        },
+        "linux-kernel": {
+          "catalog-modules": true
+        },
+        "nix": {
+          "capture-owned-files": false
+        },
+        "python": {
+          "guess-unpinned-requirements": false
+        }
+      },
+      "relationships": {
+        "exclude-binary-packages-with-file-ownership-overlap": true,
+        "package-file-ownership": true,
+        "package-file-ownership-overlap": true
+      },
+      "search": {
+        "scope": "squashed"
+      }
+    }
+  },
+  "schema": {
+    "version": "16.0.37",
+    "url": "https://raw.githubusercontent.com/anchore/syft/main/schema/json/schema-16.0.37.json"
+  }
+}
