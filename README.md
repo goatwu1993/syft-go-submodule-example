@@ -1,7 +1,14 @@
 # syft-go-submodule-example
 
+## Requirements
+
+- go
+- syft
+- grype
+- make
+
 ## How to run scan
 
 ```bash
-syft . -o json | jq  '.artifacts[].purl' -r | grep 'pkg:golang/github.com/hashicorp/vault'
+make
 ```

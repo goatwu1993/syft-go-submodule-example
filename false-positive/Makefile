@@ -10,8 +10,19 @@ syft.json: tmp/main
 	rm syft.ugly.json
 
 .PHONY: scan
-scan: syft.json
+scan: scan-purl scan-sbom
+
+.PHONY: scan-purl
+scan-purl: syft.json
+	@echo "===================="
+	@echo "Scanning PURLs with grype"
 	cat tmp/syft.json | jq  '.artifacts[].purl' -r | xargs -I{} grype {}
+
+.PHONY: scan-sbom
+scan-sbom: syft.json
+	@echo "===================="
+	@echo "Scanning SBOM with grype"
+	grype tmp/syft.json
 
 all: scan
 
