@@ -14,13 +14,13 @@ scan: scan-purl scan-sbom
 
 .PHONY: scan-purl
 scan-purl: syft.json
-	@echo "===================="
+	@echo "============================================================"
 	@echo "Scanning PURLs with grype"
 	cat tmp/syft.json | jq  '.artifacts[].purl' -r | xargs -I{} bash -c "echo 'Scanning PURL: {}'; grype {} || true"
 
 .PHONY: scan-sbom
 scan-sbom: syft.json
-	@echo "===================="
+	@echo "============================================================"
 	@echo "Scanning SBOM with grype"
 	grype tmp/syft.json
 
