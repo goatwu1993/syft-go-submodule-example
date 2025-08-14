@@ -1,4 +1,3 @@
-all: build-and-scan
 
 tmp/main: go.mod go.sum main.go
 	go build -o ./tmp/main
@@ -8,4 +7,6 @@ syft.json: tmp/main
 	cat syft.ugly.json | jq . > syft.json
 	rm syft.ugly.json
 
-build-and-scan: syft.json
+.PHONY: scan
+scan: syft.json
+	cat syft.json | jq  '.artifacts[].purl' -r | xargs -I{} grype {}
