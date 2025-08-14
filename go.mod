@@ -1,4 +1,4 @@
-module tmpgosubpath
+module syft-go-submodule-example
 
 go 1.24.5
 
